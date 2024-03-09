@@ -1,0 +1,63 @@
+[
+    { 
+      "id": 1,
+      "nombre": "Monitor 24 Pulgadas",
+      "precio": 1000,
+      "cantidad": 2 
+    },
+    { 
+      "id": 2,
+      "nombre": "Teclado Inalambrico",
+      "precio": 350,
+      "cantidad": 14 
+    },
+    {
+      "id": 3,
+      "nombre": "Mouse Gamer",
+      "precio": 250,
+      "cantidad": 13
+    },
+    { 
+      "id": 4,
+      "nombre": "Impresora Scanner",
+      "precio": 1500,
+      "cantidad": 5
+    },
+    { 
+      "id": 5,
+      "nombre": "Disco HDD 1TB",
+      "precio": 400,
+      "cantidad": 10
+    },
+    { 
+      "id": 6,
+      "nombre": "Auriculares Inalambricos",
+      "precio": 450,
+      "cantidad": 10
+    },
+    { 
+      "id": 7,
+      "nombre": "Gabinete Thermaltake",
+      "precio": 750,
+      "cantidad": 8
+    },
+    { 
+      "id": 8,
+      "nombre": "GPU RX 580",
+      "precio": 2400,
+      "cantidad": 3
+    },
+    { 
+      "id": 9,
+      "nombre": "CPU Ryzen 5 3400G",
+      "precio": 2100,
+      "cantidad": 3
+    },
+    { 
+      "id": 10,
+      "nombre": "Parlante KRK",
+      "precio": 6000,
+      "cantidad": 4
+    }
+  ]
+  

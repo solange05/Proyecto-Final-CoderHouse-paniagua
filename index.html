@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIMINAL GameShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <div class="logo-container">
+                <lottie-player src="https://lottie.host/410fa17c-4c3b-45f8-8f4f-5267d29be4d8/tIcSjHtBHP.json" background="##fff" speed="2" style="width: 100px; height: 100px" loop autoplay direction="1" mode="normal" class="logo-animation"></lottie-player>
+              </div>
+            <h1>LIMINAL</h1>
+            <div>
+                <img onclick="showCart(this)" class="cart" src="./imgs/carritoIcon.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+                    <!-- <div class="item">
+                        <img src="./imgs/products/keyboard-1.jpg" alt="">
+                        <div class="item-content">
+                            <h5>name of product name of product name of product</h5>
+                            <h5 class="cart-price">45.50$</h5>
+                            <h6>Amount: 3</h6>
+                        </div>
+                        <span>X</span>
+                    </div>
+    
+                    <div class="item">
+                        <img src="./imgs/products/keyboard-1.jpg" alt="">
+                        <div class="item-content">
+                            <h5>name of product name of product name of product</h5>
+                            <h5 class="cart-price">45.50$</h5>
+                            <h6>Amount: 3</h6>
+                        </div>
+                        <span class="delete-product" data-id="">X</span>
+                    </div> -->
+                </div>
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="./imgs/productos/Auricular Razer Kraken 7.1.jpg" alt="">
+                    <p><span>20</span>$</p>
+                </div>
+                <p class="title">Auricular Razer Kraken 7.1</p>
+                <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imgs/productos/Gabinete Gamer Game Rosa.jpg" alt="">
+                    <p><span>35</span>$</p>
+                </div>
+                <p class="title"> Gabinete Gamer Game Rosa</p>
+                <a href="" class="btn-add-cart" data-id="2">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imgs/productos/Gabinete Gamer Thermaltake snow.jpg" alt="">
+                    <p><span>15.50</span>$</p>
+                </div>
+                <p class="title"> Gabinete Gamer Thermaltake snow</p>
+                <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imgs/productos/gx gaming cavimanus.jpg" alt="">
+                    <p><span>20.20</span>$</p>
+                </div>
+                <p class="title"> Gx Gaming Cavimanus</p>
+                <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imgs/productos/gx gaming gila.png" alt="">
+                    <p><span>19</span>$</p>
+                </div>
+                <p class="title"> Gx Gaming Gila</p>
+                <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imgs/productos/teclado vigor.jpg" alt="">
+                    <p><span>45</span>$</p>
+                </div>
+                <p class="title"> MSI Vigor GK30 Teclado Gaming RGB</p>
+                <a href="" data-id="6" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imgs/productos/MONITOR GAMER CURVO 49 SAMSUNG.jpg" alt="">
+                    <p><span>23.99</span>$</p>
+                </div>
+                <p class="title"> Monitor Gamer Curvo 43" SAMSUNG</p>
+                <a href="" data-id="7" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imgs/productos/mouse gamer razer cobra.jpg" alt="">
+                    <p><span>50</span>$</p>
+                </div>
+                <p class="title"> Mars Gaming MKXTKL Teclado Mecánico Gaming RGB</p>
+                <a href="" data-id="8" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imgs/productos/PARLANTE GAMER SOUL0.jpg" alt="">
+                    <p><span>16</span>$</p>
+                </div>
+                <p class="title"> Trust GXT 881 Odyss Teclado Gaming Semi-Mecánico RGB</p>
+                <a href="" data-id="9" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imgs/productos/razer blackwidow.png" alt="">
+                    <p><span>17.50</span>$</p>
+                </div>
+                <p class="title"> Krom Krusher Teclado Gaming Híbrido RGB + Ratón</p>
+                <a href="" data-id="10" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imgs/productos/teclado redragon Dark Avenger.jpg" alt="">
+                    <p><span>45</span>$</p>
+                </div>
+                <p class="title"> Corsair K55 RGB PRO XT Teclado Gaming Retroiluminado Negro</p>
+                <a href="" data-id="11" class="btn-add-cart">add to cart</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="author">🪐 by <a href="Facu" target="_blank">GaryAT</a></p>
+    </footer>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="app.js" ></script>
+</body>
+</html>
